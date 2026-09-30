@@ -1,0 +1,7 @@
+package com.example.demo.exception;
+
+public class SuggestionNotFoundException extends RuntimeException {
+    public SuggestionNotFoundException(Long id) {
+        super("Suggestion with id '" + id + "' not found");
+    }
+}
